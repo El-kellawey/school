@@ -84,7 +84,6 @@ nav #icon{
     a.active,
     a:hover{
         border: none;
-        color: #eeeb27;
     }
 }
 @media (max-width:387px){
