@@ -1,271 +1,435 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>الشهيد هيثم سامي حمد</title>
-    <link rel="stylesheet" href="lib/font6/css/all.min.css">
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0" />
-    <link rel="stylesheet" href="main.css">
+*{
+    padding: 0px;
+    margin: 0px;
+    text-decoration: none;
+    list-style: none;
+    background-color: #e6e6fa;
+}
+body{
+    font-family: 'Almarai', sans-serif !important;
+    /* font-family: 'Courier New', Courier, monospace; */
+}
+#menu{
+    display: none;
+}
+nav{
+    height: 60px;
+    width: 100%;
+    /* background: #262e36; */
+    position: fixed;
+}
+nav ul{
+    float: right;
+    margin-right: 35%;
+}
+nav li{
+    display: inline-block;
+    margin: 0px 8px;
+    line-height: 60px;
+    letter-spacing: 1px;
 
-</head>
-<body>
-    <!--#HEADER-->
-    <nav>
-        <input type="checkbox" id="menu" >
-        <ul class="show">
-            <li><a href="#home" class="active">الرئيسيه</a></li>
-            <li><a href="#closees"> أقسام الملابس </a></li>
-            <li><a href="#whyImgFor"> قسم الالكترونيات </a></li>
-            <li><a href="#firstB"> قسم الكهرباء </a></li>
-            <li><a href="#tit">عن المدرسة</a></li>
-        </ul>
-        <label for="menu" id="icon">
-            <i class="fa-solid fa-bars"></i>
-        </label>
-    </nav>
-    <div class="heading-img" id="home">
-    </div>
+}
+nav a{
+    color: #262e36;
+    font-size: 18px;
+    font-weight: bold;
+    padding: 7px 10px;
+}
+a.active,
+a:hover{
+    transition: 0.5S;
+}
+nav #icon{
+    float: right;
+    color: #fff;
+    font-size: 30px;
+    line-height: 65px;
+    margin-right: 40px;
+    cursor: pointer;
+    display: none;
+}
+@media (max-width: 1048px){
+    nav ul{
+        margin-right: 30%;
+    }
+    nav a{
+        font-size: 17px;
+    }
+}
+@media (max-width: 924px){
+    nav #icon{
+        display: block;
+    }
+    .show{
+        position: fixed;
+        height: 80vh;
+        width: 100%;
+        background: #272b2f;
+        top: 63px;
+        text-align: center;
+        transition: all 0.5s;
+        left: -100%;
+    }
+    #menu:checked ~ .show{
+        margin-left: 100%;
+    }
+    nav li{
+        display: block;
+        margin: 50px 0px;
+        line-height: 10px;
+    }
+    nav a{
+        font-size: 20px;
+    }
+    a.active,
+    a:hover{
+        border: none;
+        /* color: #eeeb27; */
+    }
+}
+@media (max-width:387px){
+    nav #icon{
+        padding: 0;
+        font-size: 20px;
+    }
+    .type-start{
+        padding: 0 1vh;
+    }
+    .type-start .para{
+        width: 100% !important;
+        margin-left: 0 !important;
+        font-size: 2vh !important;
+    }
+    .type-start .intor {
+        font-size: 6vh !important;
+    }
+    /* a:hover,
+    a.active{
+        border: 1px solid #eeeb27;
+    } */
+}
 
 
-    <div class="closees" id="closees">
-        <h2 class="title">أقسام الملابس</h2> 
-        <div class="iconsSolic">
-            <div class="icon">
-                <span class="ic material-symbols-outlined">styler</span>
-                <h6>عمل بنطلون رجالي</h6>
-            </div>
-            <div class="icon">
-                <span class="ic material-symbols-outlined">styler</span>
-                <h6>عمل قميص رجالي</h6>
-            </div>
-            <div class="icon">
-                <span class="ic material-symbols-outlined">styler</span>
-                <h6>عمل فستنان حريمي</h6>
-            </div>
-            <div class="icon">
-                <span class="ic material-symbols-outlined">styler</span>
-                <h6>عمل حولي حريمي</h6>
-            </div>
-        </div>
-    </div>
+
+
+.heading-img{
+    background: url(images/WhatsApp\ Image\ 222024-03-27\ at\ 02.35.38_1941629b.jpg);
+    /* background: url(images/WhatsApp\ Image\ pp2024-03-27\ at\ 02.36.14_77375cae.jpg); */
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 90vh;
     
-
-    
-
-    <h2 class="titlee"> الآدوات و الخامات</h2>
-    <div class="BisWhy">           
-        <div class="whyImgTwo">
-                <img src="images/WhatsApp Image g2024-03-27 at 02.36.09_9b5f0e29.jpg" alt="">
-                <h3> ملابس جاهزه </h3>
-            <div class="whyImgBox">
-                        <div class="cardWhyType">
-                            <p> قماش دمور </p>
-                            <span class="material-symbols-outlined">check_circle </span>
-                        </div>
-                        <div class="cardWhyType">
-                            <p> خيط تكين </p>
-                            <span class="material-symbols-outlined">check_circle </span>
-                        </div>
-                        <div class="cardWhyType">
-                            <p> فازلين </p>
-                            <span class="material-symbols-outlined">check_circle </span>
-                        </div>
-                        <div class="cardWhyType">
-                            <p> سوست </p>
-                            <span class="material-symbols-outlined">check_circle </span>
-                        </div>
-                        <div class="cardWhyType">
-                            <p> زراير </p>
-                            <span class="material-symbols-outlined">check_circle </span>
-                        </div>
-            </div>
-        </div>
-
-        <div class="whyImgThree">
-            <img src="images/WhatsApp Image 2024-03-27 at 02.35.47_7bccdf00.jpg" alt="">
-            <h3> ملابس عام </h3>
-            <div class="whyImgBox">
-                <div class="cardWhyType">
-                    <p> قماش دمور </p>
-                    <span class="material-symbols-outlined">check_circle </span>
-                </div>
-                <div class="cardWhyType">
-                    <p> خيط تكين </p>
-                    <span class="material-symbols-outlined">check_circle </span>
-                </div>
-                <div class="cardWhyType">
-                    <p> فازلين </p>
-                    <span class="material-symbols-outlined">check_circle </span>
-                </div>
-                <div class="cardWhyType">
-                    <p> سوست </p>
-                    <span class="material-symbols-outlined">check_circle </span>
-                </div>
-                <div class="cardWhyType">
-                    <p> زراير </p>
-                    <span class="material-symbols-outlined">check_circle </span>
-                </div>
-            </div>
-        </div>
-        
-    </div>
-
-    <div class="BisWhy" id="whyImgFor">
-        <div class="whyImgTwo whyImgFor"> 
-            <h2 class="titlee"> قسم الالكترونيات </h2>
-            <img class="imgFin" src="images/WhatsApp Image 222024-03-27 at 02.35.38_1941629b.jpg" alt="">
-            <div class="AllImgBox">
-            
-            <div class="whyImgBox">
-                    <div class="cardWhyType">
-                        <h2>الخامات و الآدوات</h2>
-                    </div>
-                    <div class="cardWhyType">
-                        <p> أفوميتر </p>
-                        <span class="material-symbols-outlined">check_circle </span>
-                    </div>
-                    <div class="cardWhyType">
-                        <p> كادله لحام </p>
-                        <span class="material-symbols-outlined">check_circle </span>
-                    </div>
-                    <div class="cardWhyType">
-                        <p> قصدير </p>
-                        <span class="material-symbols-outlined">check_circle </span>
-                    </div>
-                    <div class="cardWhyType">
-                        <p> اسلسكوب </p>
-                        <span class="material-symbols-outlined">check_circle </span>
-                    </div>
-                    <div class="cardWhyType">
-                        <p> دوائر كهربيه </p>
-                        <span class="material-symbols-outlined">check_circle </span>
-                    </div>
-                    <div class="cardWhyType">
-                        <p> شاشات </p>
-                        <span class="material-symbols-outlined">check_circle </span>
-                    </div>
-                    <div class="cardWhyType">
-                        <p> وحده ريسيفر </p>
-                        <span class="material-symbols-outlined">check_circle </span>
-                    </div>
-                    <div class="cardWhyType">
-                        <p> هواتف محمول </p>
-                        <span class="material-symbols-outlined">check_circle </span>
-                    </div>
-                    <div class="cardWhyType">
-                        <p> وحدة أردوينوا </p>
-                        <span class="material-symbols-outlined">check_circle </span>
-                    </div>
-            </div>
-
-
-            <div class="whyImgBox">
-                <div class="cardWhyType">
-                    <h2>المواد</h2>
-                </div>
-                <div class="cardWhyType">
-                    <p> دوئر منطقيه </p>
-                    <span class="material-symbols-outlined">check_circle </span>
-                </div>
-                <div class="cardWhyType">
-                    <p> صيانه حاسب </p>
-                    <span class="material-symbols-outlined">check_circle </span>
-                </div>
-                <div class="cardWhyType">
-                    <p> دوائر الكترونيه </p>
-                    <span class="material-symbols-outlined">check_circle </span>
-                </div>
-                <div class="cardWhyType">
-                    <p> شاشات </p>
-                    <span class="material-symbols-outlined">check_circle </span>
-                </div>
-                <div class="cardWhyType">
-                    <p> ريسيفر </p>
-                    <span class="material-symbols-outlined">check_circle </span>
-                </div>
-                <div class="cardWhyType">
-                    <p> الهاتف المحمول </p>
-                    <span class="material-symbols-outlined">check_circle </span>
-                </div>
-            </div>
-        </div>
-    </div>
-
-        <!-- <div class="whyImgThree">
-            <img src="../images/avatars/worldwide-connection_53876-90449.webp" alt="">
-            <h3> المناديب</h3>
-            
-        </div> -->
-    </div>
-
-    <div class="firstB" id="firstB">
-        <div class="min-Bak">
-            <h1>قسم الكهرباء</h1>
-            <h3> الآدوات و العدد المستخدمة</h3>
-            <!-- <h1></h1> -->
-        </div>
-        <img class="imgFin" src="images/WhatsApp Image xxx2024-03-27 at 02.36.03_340953f5.jpg" alt="">
-        <div class="typeBak">
-                <div class="">
-            <p> الفولميتر <span class="material-symbols-outlined">line_start_arrow_notch</span></p>
-            <p> الأفوميتر <span class="material-symbols-outlined">line_start_arrow_notch</span></p>
-            <p> ابيروميتر <span class="material-symbols-outlined">line_start_arrow_notch</span></p>
-            <p> بعض من العناصر الالكترونيه <span class="material-symbols-outlined">line_start_arrow_notch</span></p>
-            <p> أسلاك بأنواعها <span class="material-symbols-outlined">line_start_arrow_notch</span></p>
-            <p> مصابيه بأنواعها <span class="material-symbols-outlined">line_start_arrow_notch</span></p>
-                </div>
-                <div class="">
-            <p> العدد المستخدمه في الاعمال الكهربيه <span class="material-symbols-outlined">line_start_arrow_notch</span></p>
-            <p> كاويه لحام <span class="material-symbols-outlined">line_start_arrow_notch</span></p>
-            <p> محولات احاديه الوجه <span class="material-symbols-outlined">line_start_arrow_notch</span></p>
-            <p> محولات ثلاثيه الوجه <span class="material-symbols-outlined">line_start_arrow_notch</span></p>
-            <p> مفاتيح بأنواعها <span class="material-symbols-outlined">line_start_arrow_notch</span></p>
-            <p> برايز بأنواعها <span class="material-symbols-outlined">line_start_arrow_notch</span></p>
-                </div>
-        </div>
-    </div>
+}
+@media (max-width:1314px){
+    .heading-img{
+        height: 65vh;
+    }
+}
+@media (max-width:965px){
+    .heading-img{
+        height: 50vh;
+    }
+}
+@media (max-width:753px){
+    .heading-img{
+        height: 30vh;
+    }
+}
+@media (max-width:473px){
+    .heading-img{
+        height: 24vh;
+    }
+}
 
 
 
-    <h2 class="titlee" id="tit"> عن المدرسة </h2>
-    <div class="sm-panner">
-        <div class="">
-            <h1>+173</h1>
-            <p>جملة العاملين بالمدرسة</p>
-        </div>
+.images-th{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    margin: 5vh;
+}
+.images-th img{
+    width: 30vh !important;
 
-        <div class="">
-            <h1>+18</h1>
-            <p>عدد الفصول</p>
-        </div>
+}
+.title{
+    display: flex;
+    justify-content: space-around;
+    margin-top: 15vh;
+    color: #24374F;
+    font-size: 5vh;
+}
+.title::before {
+    content: '';
+    position: absolute;
+    display: block;
+    width: 130px;
+    height: 1px;
+    background: #ddd;
+    bottom: -20vh;
+    left: calc(50% - 60px);
+}
 
-        <div class="">
-            <h1>+7</h1>
-            <p>عدد الورش</p>
-        </div>
-    </div>
-    <div class="sm-panner">
-        <div class="">
-            <h1>+4</h1>
-            <p>عدد الحمامات</p>
-        </div>
+.title::after {
+    content: '';
+    position: absolute;
+    display: block;
+    width: 45px;
+    height: 6px;
+    background: #ffa339;
+    bottom: -20.3vh;
+    left: calc(50% - 20px);
+}
+.icon{
+    background-color: #1e90ff;
+    width: 10%;
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    margin: 3vh;
+}
+.iconsSolic{
+    background-color: #1e90ff;
+}
+.iconsSolic .icon .ic:hover{
+    /* background-color: #48A559; */
+    background-color: #24374F;
+    border: 1vh solid #fff;
+    color: #FFF;
+    transition: 1s;
+}
+.iconsSolic .icon span{
+    font-size: 4vh;
+    font-weight: bold;
+    /* border: 1vh solid #179D58; */
+    border: 1vh solid #24374F;
+    color: #24374F;
+    border-radius: 100%;
+    padding: 4vh;
+    margin: 1vh;
+    transition: 1s;
+}
+.iconsSolic .icon h6{
+    font-weight: bold;
+    text-align: center;
+    width: 12vh;
+    color: #24374F;
+    font-size: 2.5vh;
+    font-weight: bold;
+    background-color: #1e90ff;
+}
+.iconsSolic{
+    display: flex;
+    margin: 5vh 0;
+    justify-content: space-around;
+    /* flex-wrap: wrap; */
+}
+.images-on{
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+.images-on img{
+    width: 20vh;
+    margin: 2vh;
+}
+@media (max-width:995px){
+    .iconsSolic{
+    display: flex;
+    flex-wrap: wrap;
+    }
+    .iconsSolic .icon{
+    margin: 11%;
+    }
+}
+@media (max-width:570px){
+    .iconsSolic .icon{
+    width: 27%;
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    }
+}
 
-        <div class="">
-            <h1>+1821</h1>
-            <p>عدد الطالبات</p>
-        </div>
+.BisWhy{
+    display: flex;
+    justify-content: space-evenly;
+}
+.BisWhy img{
+    width: 100%;
+    height: 55vh;
+    /* padding: 1vh; */
+    border-radius: 0vh 2vh 0vh 2vh;
+    margin-bottom: 4vh;
+}
+.BisWhy h3{
+    font-size: 4.5vh;
+    font-weight: 100 !important;
+    margin-right: 2vh;
+    margin-bottom: 3vh;
+    text-align: end;
+}
+.cardWhyType {
+    display: flex;
+    justify-content: flex-end;
+    margin-right: 2vh;
+    font-weight: 900;
+    color: #4b4a4a;
+}
+.BisWhy span {
+    font-size: 2.5vh;
+    margin-top: 3px;
+    /* width: 25%; */
+    color: #1e90ff;
+}
+.BisWhy p {
+    width: 100%;
+    font-size: 1.8vh;
+    margin: 0vh 1vh 2vh 4vh;
+    padding-right: 1.5vh;
+    color: #4b4a4a;
+    text-align: end;
+}
+.titlee{
+    display: flex;
+    justify-content: space-around;
+    color: #24374F;
+    font-size: 5vh;
+    margin: 17vh 0 8vh 0;
+}
+@media (max-width:962px){
+    .BisWhy {
+        display: block;
+        margin: 0 7.5vh;
+    }
+}
+.images-gh{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+}
+.images-gh img{
+    width: 30% !important;
+    height: 25vh !important;
+    margin: 1vh;
+}
 
-        <div class="">
-            <h1>+1</h1>
-            <p>عدد المكتبات</p>
-        </div>
-        <div class="">
-            <h1>+1</h1>
-            <p>عدد المسرح</p>
-        </div>
-    </div>
-    
-    
-</body>
-</html>
+.AllImgBox{
+    display: flex;
+    justify-content: space-around;
+    margin: 0 5vh;
+}
+@media (max-width:738px){
+    .AllImgBox {
+        display: grid;
+        justify-content: space-around;
+    }
+}
+
+.min-Bak{
+    margin: 5vh 0;
+}
+.firstB{
+    text-align: center;
+    /* background-color: #fff; */
+    /* width: 50%; */
+    /* margin: 15vh 5vh; */
+    padding: 8vh 10vh;
+    border-radius: 2vh;
+    /* box-shadow: 1px 15px 20px rgba(0, 0, 0, 0.2); */
+}
+.firstB img{
+    width: 100%;
+    height: 55vh;
+    border-radius: 5vh 0;
+}
+.typeBak{
+    display: flex;
+    justify-content: space-evenly;
+    margin-top: 6vh;
+}
+.typeBak p{
+    text-align: end;
+    font-size: 2vh;
+}
+.typeBak span{
+    /* margin-left: 3vh; */
+    color: #1e90ff;
+    padding: 2vh;
+}
+.min-Bak h1{
+    color: #1e90ff;
+}
+@media (max-width:718px){
+    .typeBak {
+        display: grid;
+        justify-content: space-evenly;
+        margin-top: 6vh;
+    }
+}
+
+.zaksec {
+    text-align: center;
+}
+.zaksec .images-ze{
+    display: flex;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+}
+.zaksec .images-ze img{
+    width: 30vh;
+    height: 30vh;
+    border-radius: 30vh;
+
+}
+
+
+
+
+.sm-panner{
+    font-family: 'Almarai', sans-serif !important;
+    display: flex;
+    justify-content: space-evenly;
+    background-color: #3d9bb5;
+    color: #fff;
+    height: 30vh;
+    margin: 10vh 0;
+}
+.sm-panner div{
+    margin-top: 5vh;
+    display: grid;
+    justify-items: center;
+    background-color: #3d9bb5;
+}
+.sm-panner p{
+    background-color: #3d9bb5;
+    font-weight: bold;
+    font-size: 3vh;
+}
+.sm-panner h1{
+    background-color: #3d9bb5;
+    font-size: 8vh;
+}
+.sm-panner h1:hover{
+    color: #ffa339;
+    cursor: pointer;
+    font-size: 8vh;
+}
+@media (max-width:897px){
+    .sm-panner{
+        flex-wrap: wrap;
+        height: 45vh;
+    }
+    .sm-panner div{
+        margin: 3vh;
+    } 
+
+}
+
+@media (max-width:518px){
+    .sm-panner {
+        flex-wrap: wrap;
+        height: 90vh;
+    }
+}
