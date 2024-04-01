@@ -84,6 +84,7 @@ nav #icon{
     a.active,
     a:hover{
         border: none;
+        /* color: #eeeb27; */
     }
 }
 @media (max-width:387px){
@@ -142,7 +143,16 @@ nav #icon{
 
 
 
+.images-th{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    margin: 5vh;
+}
+.images-th img{
+    width: 30vh !important;
 
+}
 .title{
     display: flex;
     justify-content: space-around;
@@ -172,11 +182,15 @@ nav #icon{
     left: calc(50% - 20px);
 }
 .icon{
+    background-color: #1e90ff;
     width: 10%;
     align-items: center;
     display: flex;
     flex-direction: column;
     margin: 3vh;
+}
+.iconsSolic{
+    background-color: #1e90ff;
 }
 .iconsSolic .icon .ic:hover{
     /* background-color: #48A559; */
@@ -203,12 +217,22 @@ nav #icon{
     color: #24374F;
     font-size: 2.5vh;
     font-weight: bold;
+    background-color: #1e90ff;
 }
 .iconsSolic{
     display: flex;
     margin: 5vh 0;
     justify-content: space-around;
     /* flex-wrap: wrap; */
+}
+.images-on{
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+.images-on img{
+    width: 20vh;
+    margin: 2vh;
 }
 @media (max-width:995px){
     .iconsSolic{
@@ -280,10 +304,20 @@ nav #icon{
         margin: 0 7.5vh;
     }
 }
+.images-gh{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+}
+.images-gh img{
+    width: 30% !important;
+    height: 25vh !important;
+    margin: 1vh;
+}
 
 .AllImgBox{
     display: flex;
-    justify-content: space-between;
+    justify-content: space-around;
     margin: 0 5vh;
 }
 @media (max-width:738px){
@@ -333,6 +367,21 @@ nav #icon{
         justify-content: space-evenly;
         margin-top: 6vh;
     }
+}
+
+.zaksec {
+    text-align: center;
+}
+.zaksec .images-ze{
+    display: flex;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+}
+.zaksec .images-ze img{
+    width: 30vh;
+    height: 30vh;
+    border-radius: 30vh;
+
 }
 
 
